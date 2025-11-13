@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_2</title>
+</head>
+<body>
+    
+    <h1>Demostracion de Output con Javascript</h1>
+
+    <button id="boton_alerta">Da click para saber mi nombre</button>
+
+    <p id="mensaje"></p>
+
+    <button id="boton_actualizar">Actualizar texto</button>
+
+    <script>
+        console.log("La pagina esta cargando correctamente");
+
+        const botonAlerta = document.getElementById("boton_alerta");
+        const botonActualizar = document.getElementById("boton_actualizar");
+        const parrafo = document.getElementById("mensaje");
+
+        botonAlerta.addEventListener('click',function() {
+            alert("Mi nombre es Leonardo")
+        });
+
+        botonActualizar.addEventListener('click',function() {
+            parrafo.textContent = "Texto actualizado con Javascript"
+        });
+
+    </script>
+
+</body>
+</html>
